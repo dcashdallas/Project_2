@@ -20,9 +20,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", function (req, res) {
-  res.json(path.join(__dirname, "public/index.html"));
-});
+
 
 // Requiring our routes
 require("./routes/html-routes.js")(app);
