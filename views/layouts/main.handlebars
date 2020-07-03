@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beefsquatch's Burgers of the Day!</title>
+    <link rel="icon" href="/assets/images/gamer.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <center>
+            <h1 class="font">Gamer Collection<small class="tiny_text"></small></h1>
+        </center>
+
+        <br>
+
+
+
+        <!-- Content from index.handlebars -->
+        {{{body}}}
+
+
+        <br><br>
+
+        <form action=" game/create" method="POST">
+
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="form-group col-md-6">
+                    <center><label for="game_burger" class="font">Add a Game</label>
+                    </center>
+                    <textarea class="form-control" columns="8" rows="4" id="new_game" name="game_name"></textarea>
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+
+            <center>
+                <button id="submit-button" type="submit" class="btn btn-danger">Game On!</button>
+            </center>
+
+        </form>
+
+        <br>
+
+        {{!-- <center>
+            <div class="row">
+                <img src="/assets/images/bobsburger.gif">
+            </div>
+        </center> --}}
+        <br>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+
+</body>
+
+</html>

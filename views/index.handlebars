@@ -1,0 +1,39 @@
+<div class="row">
+    <center>
+        <div class="col-md-6">
+            <h4 class="font">Hot Games</h4>
+            <div id="ready_to_play">
+
+                {{#each games}}
+                {{#unless owned}}
+                <form action="game/own/{{id}}" method="POST">
+                    <div class="input-group">
+                        <li class="form-control">{{id}}. {{game_name}}</li>
+                        <span class="input-group-btn">
+                            <button class="btn btn-success devour-button" type="submit">Own It!</button>
+                        </span>
+                    </div>
+                </form>
+                {{/unless}}
+                {{/each}}
+
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h4 class="font">Game Owned!</h4>
+            <div id="already_owned">
+
+                {{#each games}}
+                {{#if this.owned}}
+                <div class="input-group">
+                    <li class="form-control">{{this.id}}. {{this.game_name}}</li>
+
+                </div>
+                {{/if}}
+                {{/each}}
+
+            </div>
+        </div>
+    </center>
+</div>
