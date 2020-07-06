@@ -27,13 +27,20 @@
                 {{#each games}}
                 {{#if this.owned}}
                 <div class="input-group">
-                    <li class="form-control">{{this.id}}. {{this.game_name}}</li>
+                    <li class="form-control">{{this.id}}. {{this.game_name}} <div class="rw-ui-container"></div>
+                    </li>
+                    {{!-- <span class="input-group-btn">
+                        <button class="btn btn-success devour-button" type="submit">Review It!</button>
+                        
+                    </span> --}}
 
                 </div>
                 {{/if}}
                 {{/each}}
 
+
             </div>
+
         </div>
 
         <div>
