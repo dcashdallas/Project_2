@@ -6,78 +6,14 @@
     <link rel="icon" href="/assets/images/gamer.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
-    <script type="text/javascript">(function (d, t, e, m) {
 
-            // Async Rating-Widget initialization.
-            window.RW_Async_Init = function () {
-
-                RW.init({
-                    huid: "462026",
-                    uid: "72bb5b341e4cd35c9ceb2696b4f2dc7b",
-                    options: { "style": "oxygen" }
-                });
-                RW.render();
-            };
-            // Append Rating-Widget JavaScript library.
-            var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
-                l = d.location, ck = "Y" + t.getFullYear() +
-                    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
-                f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
-                a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
-            if (d.getElementById(id)) return;
-            rw = d.createElement(e);
-            rw.id = id; rw.async = true; rw.type = "text/javascript";
-            rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
-            s.parentNode.insertBefore(rw, s);
-        }(document, new Date(), "script", "rating-widget.com/"));</script>
 
 </head>
 
 <body>
 
-    <div class="container">
-
-
-        <center>
-            <h1 class="font">The Gamer Collection Connection<small class="tiny_text"></small></h1>
-            <center>
-                <h1 class=font>Latest Gaming News</h1>
-            </center>
-        </center>
-        <div class="feedgrabbr_widget" id="fgid_921ede498cff1a31053b9cbfb"></div>
-        <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_921ede498cff1a31053b9cbfb");</script>
-        <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
-
-        <br>
-
-
-
-        <!-- Content from index.handlebars -->
-        {{{body}}}
-
-
-        <br><br>
-
-        <form action=" game/create" method="POST">
-
-            <div class="row">
-                <div class="col-md-3"></div>
-
-                <div class="form-group col-md-6">
-                    <center><label for="game_burger" class="font">Add a Game</label>
-                    </center>
-                    <textarea class="form-control" columns="8" rows="4" id="new_game" name="game_name"></textarea>
-                </div>
-
-                <div class="col-md-3"></div>
-            </div>
-
-            <center>
-                <button id="submit-button" type="submit" class="btn btn-danger">Game On!</button>
-            </center>
-
-        </form>
 
 
 
@@ -85,7 +21,13 @@
 
 
 
-    </div>
+
+    <!-- Content from index.handlebars -->
+    {{{body}}}
+
+
+    <br><br>
+
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 

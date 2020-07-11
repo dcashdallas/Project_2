@@ -12,6 +12,29 @@ body {
    
 }
 
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+.font2 { 
+  color:rgb(16, 83, 16);
+  font-family: 'Orbitron', sans-serif;
+  font-size: px;
+
+}
+
+.navbar {
+  border-style:solid;
+  border-width:1px;  
+  border-color: rgb(237, 245, 123);
+  background: linear-gradient(rgb(11, 62, 109), rgb(174, 184, 40));
+  font-family: 'Orbitron', sans-serif;
+  padding: 5px 20px 5px 20px; 
+ 
+}
+
 h2 {
   color: black;
   border-style: solid;
@@ -22,11 +45,13 @@ h2 {
 .font {
   color: white;
   border-style:solid;
-  border-width:10px;  
-  border-color: rgb(65, 64, 64);
-  background: grey;
-  font-family: cursive;
+  border-width:1px;  
+  border-color: rgb(237, 245, 123);
+  background: linear-gradient(rgb(11, 62, 109), rgb(174, 184, 40));
+  font-family: 'Orbitron', sans-serif;
 }
+
+
 
 .tiny_text {
   font-size: 11px;

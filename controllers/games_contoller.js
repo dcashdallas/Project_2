@@ -16,6 +16,14 @@ router.get('/index', function (req, res) {
     });
 });
 
+router.get('/login', function (req, res) {
+    // game.selectAll(function (data) {
+    //     var hbsObject = { games: data };
+    //     //console.log(hbsObject);
+    res.render('login', {});
+    // });
+});
+
 router.post('/game/create', function (req, res) {
     game.insertOne(req.body.game_name, function () {
         res.redirect('/index');
