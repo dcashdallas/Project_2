@@ -3,9 +3,6 @@
     <form align="right" class="form-inline">
         <input type="button" id="logout-button" onclick="window.location.href='/login';" value="Logout" />
     </form>
-
-
-
 </nav>
 
 <script type="text/javascript">(function (d, t, e, m) {
@@ -53,16 +50,14 @@
                 <div class="col-md-3"></div>
 
                 <div class="form-group col-md-6">
-                    <center><label for="game_name" class="font">Add a Game</label>
-                    </center>
-                    <textarea class="form-control" columns="8" rows="4" id="new_game" name="game_name"></textarea>
+                    <center><label for="game_name" class="font3">Add a Game to Your Wish List:</label></center>
+                    <textarea class="form-control" columns="8" rows="2" id="new_game" name="game_name"></textarea>
                 </div>
 
                 <div class="col-md-3"></div>
             </div>
-
             <center>
-                <button id="submit-button" type="submit" class="btn btn-danger">Game On!</button>
+                <button id="submit-button" type="submit" class="btn btn-danger">Add Game</button>
             </center>
 
         </form>
@@ -70,7 +65,7 @@
         <div class="row">
             <center>
                 <div class="col-md-6">
-                    <h4 class="font">Game Wish List</h4>
+                    <h4 class="font">Games You Want</h4>
                     <div id="ready_to_play">
 
                         {{#each games}}
@@ -79,7 +74,7 @@
                             <div class="input-group">
                                 <li class="form-control">{{id}}. {{game_name}}</li>
                                 <span class="input-group-btn">
-                                    <button class="btn btn-success devour-button" type="submit">Own It!</button>
+                                    <button class="btn btn-success devour-button" type="submit">I Own It!</button>
                                 </span>
                             </div>
                         </form>
@@ -90,7 +85,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h4 class="font">Game Owned!</h4>
+                    <h4 class="font">Games You Own</h4>
                     <div id="already_owned">
 
                         {{#each games}}
@@ -99,13 +94,14 @@
                             <li class="form-control">{{this.id}}. {{this.game_name}} <div class="rw-ui-container"></div>
                             </li>
                             {{!-- <span class="input-group-btn">
-                        <button class="btn btn-success devour-button" type="submit">Review It!</button>
-                        
+                        <button class="btn btn-success devour-button" type="submit">Review It!</button>    
                     </span> --}}
-
                         </div>
                         {{/if}}
                         {{/each}}
 
+                    </div>
+
+                    <div>
 
                     </div>
